@@ -44,6 +44,19 @@ module.exports = {
                 name: `pages`,
             },
         },
+        {
+            resolve: `gatsby-plugin-s3`,
+            options: {
+              bucketName: "miika-rgf-ghost",
+            },
+          },
+          {
+            resolve: `gatsby-source-ghost`,
+            options: {
+              apiUrl: `http://18.220.22.226`,
+              contentApiKey: `6bbf9144e548769eb510d47ac2`,
+            },
+          },
         // Setup for optimised images.
         // See https://www.gatsbyjs.org/packages/gatsby-image/
         {

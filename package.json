@@ -28,7 +28,8 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
@@ -50,9 +51,10 @@
     "gatsby-plugin-manifest": "2.2.41",
     "gatsby-plugin-offline": "3.0.34",
     "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-s3": "^0.3.2",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-source-filesystem": "2.1.48",
-    "gatsby-source-ghost": "4.0.3",
+    "gatsby-source-ghost": "^4.0.3",
     "gatsby-transformer-sharp": "2.3.14",
     "lodash": "4.17.15",
     "react": "16.12.0",
